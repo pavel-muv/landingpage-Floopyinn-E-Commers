@@ -1,0 +1,39 @@
+.features {
+  margin: 70px 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+}
+
+.card {
+  display: flex;
+  width: 274px;
+  height: 106px;
+  padding-left: 32px;
+  align-items: center;
+  background-color: #eff9ff;
+  border: 1px solid #ededed;
+  border-radius: 8px;
+
+  &__img {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__text {
+    margin-left: 16px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &__description {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,160 @@
+.header {
+  width: 100%;
+  padding: 26px 0;
+  box-shadow: 0px 2px 8px #9f9f9f;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 32px;
+  }
+
+  .logo {
+    &::after {
+      display: none;
+    }
+
+    &:hover::after {
+      display: none;
+    }
+
+    &__img {
+      width: 90px;
+    }
+  }
+
+  .menu {
+    display: flex;
+    gap: 32px;
+
+    &__item {
+      position: relative;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        text-decoration: none;
+        color: #0d0d0d;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -2px;
+          width: 100%;
+          height: 1px;
+          background-color: $accent;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0.3s ease, opacity 0.3s ease;
+          opacity: 0;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          opacity: 1;
+        }
+      }
+
+      .arrow {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        position: relative;
+        margin-left: 5px;
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          width: 8px;
+          height: 1px;
+          background-color: #0d0d0d;
+          transform-origin: center;
+          transition: transform 0.3s ease;
+        }
+
+        &::before {
+          transform: rotate(45deg);
+          left: -5px;
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+          left: 0;
+        }
+      }
+
+      .submenu {
+        position: absolute;
+        top: 110%;
+        left: 0;
+        background: #fff;
+        padding: 20px 15px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        z-index: 10;
+
+        .submenu__item + .submenu__item {
+          margin-top: 20px;
+        }
+      }
+
+      &:hover {
+        .submenu {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+
+        .arrow {
+          &::before {
+            transform: rotate(-45deg);
+          }
+
+          &::after {
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+
+  .icon {
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    &__img {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &--alert::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 7px;
+      height: 7px;
+      background-color: #da2e1f;
+      border-radius: 50%;
+    }
+  }
+}

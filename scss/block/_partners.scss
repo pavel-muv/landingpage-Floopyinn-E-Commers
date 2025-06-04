@@ -1,0 +1,19 @@
+.partners {
+  display: flex;
+  margin-top: 170px;
+  gap: 57px;
+  justify-content: space-between;
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 70px;
+    border: 1px solid #222;
+    border-radius: 13px;
+    background-color: #fffafa;
+  }
+
+  //   &__img {}
+}

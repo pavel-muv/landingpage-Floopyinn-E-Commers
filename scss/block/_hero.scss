@@ -1,0 +1,30 @@
+.hero {
+  width: 100%;
+
+  &__wrapper {
+    margin-top: 23px;
+    padding: 100px 15px 100px 54px;
+    background-image: url('../img/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  &__title {
+    max-width: 660px;
+    margin-top: 30px;
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 600;
+  }
+
+  &__btn {
+    margin-top: 30px;
+    padding: 14px 18px;
+  }
+}

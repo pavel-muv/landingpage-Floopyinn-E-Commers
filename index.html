@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoftHouse</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__container container">
+        <a href="#" class="logo">
+          <img src="img/logo.svg" alt="Logo" class="logo__img" />
+        </a>
+        <nav class="header__nav header__nav--left">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Для мужчин</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Для женщин</a>
+            </li>
+            <li class="menu__item menu-item-has-children">
+              <a href="#">
+                Аксесуары
+                <span class="arrow"></span>
+              </a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Сумки</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Часы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Блог</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">FAQ</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__icons">
+          <button class="icon">
+            <img class="icon__img" src="./img/search.svg" alt="Поиск" />
+          </button>
+          <button class="icon icon--alert">
+            <img class="icon__img" src="./img/user.svg" alt="Авторизация" />
+          </button>
+          <button class="icon">
+            <img class="icon__img" src="./img/heart.svg" alt="Избранное" />
+          </button>
+          <button class="icon">
+            <img class="icon__img" src="./img/cart.svg" alt="Корзина" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <!-- hero  -->
+      <section class="hero container">
+        <div class="hero__wrapper">
+          <p class="hero__subtitle">Открой лучшее в этом сезоне 🔥</p>
+          <h1 class="hero__title">Уникальная коллекция для каждого</h1>
+          <button class="btn hero__btn">Изучить</button>
+        </div>
+      </section>
+
+      <!-- features -->
+      <section class="features">
+        <div class="features__list container">
+          <div class="features__item card">
+            <div class="card__icon">
+              <img src="./img/Fast-Delivery.svg" alt="icon" />
+            </div>
+            <div class="card__text">
+              <h3 class="card__title">Быстрая доставка</h3>
+              <p class="card__description">начиная от 100 рублей</p>
+            </div>
+          </div>
+          <div class="features__item card">
+            <div class="card__icon">
+              <img src="./img/money.svg" alt="icon" />
+            </div>
+            <div class="card__text">
+              <h3 class="card__title">Денежная гарантия</h3>
+              <p class="card__description">7 дней на возврат</p>
+            </div>
+          </div>
+          <div class="features__item card">
+            <div class="card__icon">
+              <img src="./img/time.svg" alt="icon" />
+            </div>
+            <div class="card__text">
+              <h3 class="card__title">360 дней</h3>
+              <p class="card__description">для бесплатного возврата</p>
+            </div>
+          </div>
+          <div class="features__item card">
+            <div class="card__icon">
+              <img src="./img/pay.svg" alt="icon" />
+            </div>
+            <div class="card__text">
+              <h3 class="card__title">Платежи</h3>
+              <p class="card__description">по безопасной системе</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- discounts -->
+      <section class="discounts container">
+        <div class="discounts__text">
+          <p class="discounts__description">Узнай больше</p>
+          <h2 class="discounts__title">Тебя ждет много хорошего</h2>
+        </div>
+        <div class="discounts__content">
+          <div class="discounts__main-item">
+            <h3 class="discounts__main-title">Коллекция для образа жизни</h3>
+            <p class="discounts__main-subtitle">Для мужчин</p>
+            <p class="discounts__main-discount">Скидки <span>до 30%</span></p>
+            <p class="discounts__main-shipping">
+              Бесплатная доставка при заказе от 3000 р
+            </p>
+            <button class="discounts__main-btn btn">Купить</button>
+          </div>
+          <div class="discounts__offer-item">
+            <h3 class="discounts__offer-title">Коллекция модных сумок</h3>
+            <p class="discounts__offer-shipping">
+              Бесплатная доставка при заказе от 3000 р
+            </p>
+            <button class="discounts__offer-btn btn">Купить</button>
+          </div>
+          <div class="discounts__offer-item">
+            <h3 class="discounts__offer-title">Чёрные Apple Watch Series 4</h3>
+            <p class="discounts__offer-shipping">
+              Бесплатная доставка при заказе от 3000 р
+            </p>
+            <button class="discounts__offer-btn btn">Купить</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- shop -->
+      <section class="shop container">
+        <h2 class="shop__title">
+          Новые поступления <span>мужской и женской одежды</span>
+        </h2>
+
+        <div class="shop__filter-tabs filter-tabs">
+          <button
+            class="filter-tabs__btn filter-tabs__btn--active"
+            data-filter="all"
+          >
+            Все товары
+          </button>
+          <button class="filter-tabs__btn" data-filter="men">Мужчины</button>
+          <button class="filter-tabs__btn" data-filter="women">Женщины</button>
+          <button class="filter-tabs__btn" data-filter="sale">
+            Распродажа
+          </button>
+          <button class="filter-tabs__btn" data-filter="new">Новинки</button>
+        </div>
+
+        <div class="shop__products products">
+          <div class="products__card" data-category="men sale">
+            <div class="products__image-section">
+              <div class="products__badge">50% discount</div>
+              <div class="products__size">S</div>
+              <img
+                class="products__image"
+                src="img/shop/1.png"
+                alt="Футболка"
+              />
+            </div>
+            <div class="products__info">
+              <div class="products__colors">
+                <button
+                  class="products__color products__color--active"
+                  style="background-color: #d79290"
+                  aria-label="Цвет 1"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #332b3e"
+                  aria-label="Цвет 2"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #e0a79d"
+                  aria-label="Цвет 3"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #efefef"
+                  aria-label="Цвет 4"
+                ></button>
+              </div>
+
+              <h3 class="products__title">Футболка мужская</h3>
+              <p class="products__description">
+                18 продано за последние 8 часов
+              </p>
+              <div class="products__review-price">
+                <p class="products__review">Отзывы</p>
+                <button class="products__price">1 499 ₽</button>
+              </div>
+            </div>
+          </div>
+          <div class="products__card" data-category="men new">
+            <div class="products__image-section">
+              <!-- <div class="products__badge">50% discount</div> -->
+              <div class="products__size">S</div>
+              <img
+                class="products__image"
+                src="img/shop/2.png"
+                alt="Футболка"
+              />
+            </div>
+            <div class="products__info">
+              <div class="products__colors">
+                <button
+                  class="products__color products__color--active"
+                  style="background-color: #d79290"
+                  aria-label="Цвет 1"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #332b3e"
+                  aria-label="Цвет 2"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #e0a79d"
+                  aria-label="Цвет 3"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #efefef"
+                  aria-label="Цвет 4"
+                ></button>
+              </div>
+
+              <h3 class="products__title">Футболка класическая</h3>
+              <p class="products__description">
+                20 продано за последние 8 часов
+              </p>
+              <div class="products__review-price">
+                <p class="products__review">Отзывы</p>
+                <button class="products__price">2 199 ₽</button>
+              </div>
+            </div>
+          </div>
+          <div class="products__card" data-category="sale men">
+            <div class="products__image-section">
+              <div class="products__badge">50% discount</div>
+              <div class="products__size">L</div>
+              <img
+                class="products__image"
+                src="img/shop/3.png"
+                alt="Футболка"
+              />
+            </div>
+            <div class="products__info">
+              <div class="products__colors">
+                <button
+                  class="products__color products__color--active"
+                  style="background-color: #d79290"
+                  aria-label="Цвет 1"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #332b3e"
+                  aria-label="Цвет 2"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #e0a79d"
+                  aria-label="Цвет 3"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #efefef"
+                  aria-label="Цвет 4"
+                ></button>
+              </div>
+
+              <h3 class="products__title">Футболка мужская</h3>
+              <p class="products__description">
+                18 продано за последние 8 часов
+              </p>
+              <div class="products__review-price">
+                <p class="products__review">Отзывы</p>
+                <button class="products__price">2 499 ₽</button>
+              </div>
+            </div>
+          </div>
+          <div class="products__card" data-category="new men">
+            <div class="products__image-section">
+              <!-- <div class="products__badge">50% discount</div> -->
+              <div class="products__size">S</div>
+              <img
+                class="products__image"
+                src="img/shop/4.png"
+                alt="Футболка"
+              />
+            </div>
+            <div class="products__info">
+              <div class="products__colors">
+                <button
+                  class="products__color products__color--active"
+                  style="background-color: #d79290"
+                  aria-label="Цвет 1"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #332b3e"
+                  aria-label="Цвет 2"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #e0a79d"
+                  aria-label="Цвет 3"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #efefef"
+                  aria-label="Цвет 4"
+                ></button>
+              </div>
+
+              <h3 class="products__title">Футболка 3 цвета</h3>
+              <p class="products__description">
+                18 продано за последние 8 часов
+              </p>
+              <div class="products__review-price">
+                <p class="products__review">Отзывы</p>
+                <button class="products__price">1 499 ₽</button>
+              </div>
+            </div>
+          </div>
+          <div class="products__card" data-category="women sale">
+            <div class="products__image-section">
+              <div class="products__badge">50% discount</div>
+              <div class="products__size">S</div>
+              <img class="products__image" src="img/shop/5.png" alt="Кофта" />
+            </div>
+            <div class="products__info">
+              <div class="products__colors">
+                <button
+                  class="products__color products__color--active"
+                  style="background-color: #d79290"
+                  aria-label="Цвет 1"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #332b3e"
+                  aria-label="Цвет 2"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #e0a79d"
+                  aria-label="Цвет 3"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #efefef"
+                  aria-label="Цвет 4"
+                ></button>
+              </div>
+
+              <h3 class="products__title">Кофта женская</h3>
+              <p class="products__description">
+                18 продано за последние 8 часов
+              </p>
+              <div class="products__review-price">
+                <p class="products__review">Отзывы</p>
+                <button class="products__price">1 799 ₽</button>
+              </div>
+            </div>
+          </div>
+          <div class="products__card" data-category="women new sale">
+            <div class="products__image-section">
+              <div class="products__badge">50% discount</div>
+              <div class="products__size">S</div>
+              <img
+                class="products__image"
+                src="img/shop/6.png"
+                alt="Футболка"
+              />
+            </div>
+            <div class="products__info">
+              <div class="products__colors">
+                <button
+                  class="products__color products__color--active"
+                  style="background-color: #d79290"
+                  aria-label="Цвет 1"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #332b3e"
+                  aria-label="Цвет 2"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #e0a79d"
+                  aria-label="Цвет 3"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #efefef"
+                  aria-label="Цвет 4"
+                ></button>
+              </div>
+
+              <h3 class="products__title">Кофта женская класическая</h3>
+              <p class="products__description">
+                18 продано за последние 8 часов
+              </p>
+              <div class="products__review-price">
+                <p class="products__review">Отзывы</p>
+                <button class="products__price">1 199 ₽</button>
+              </div>
+            </div>
+          </div>
+          <div class="products__card" data-category="women new">
+            <div class="products__image-section">
+              <div class="products__badge">50% discount</div>
+              <div class="products__size">S</div>
+              <img
+                class="products__image"
+                src="img/shop/7.png"
+                alt="Футболка"
+              />
+            </div>
+            <div class="products__info">
+              <div class="products__colors">
+                <button
+                  class="products__color products__color--active"
+                  style="background-color: #d79290"
+                  aria-label="Цвет 1"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #332b3e"
+                  aria-label="Цвет 2"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #e0a79d"
+                  aria-label="Цвет 3"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #efefef"
+                  aria-label="Цвет 4"
+                ></button>
+              </div>
+
+              <h3 class="products__title">Толстовка женская</h3>
+              <p class="products__description">
+                18 продано за последние 8 часов
+              </p>
+              <div class="products__review-price">
+                <p class="products__review">Отзывы</p>
+                <button class="products__price">2 299 ₽</button>
+              </div>
+            </div>
+          </div>
+          <div class="products__card" data-category="women sale">
+            <div class="products__image-section">
+              <div class="products__badge">50% discount</div>
+              <div class="products__size">S</div>
+              <img
+                class="products__image"
+                src="img/shop/8.png"
+                alt="Футболка"
+              />
+            </div>
+            <div class="products__info">
+              <div class="products__colors">
+                <button
+                  class="products__color products__color--active"
+                  style="background-color: #d79290"
+                  aria-label="Цвет 1"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #332b3e"
+                  aria-label="Цвет 2"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #e0a79d"
+                  aria-label="Цвет 3"
+                ></button>
+                <button
+                  class="products__color"
+                  style="background-color: #efefef"
+                  aria-label="Цвет 4"
+                ></button>
+              </div>
+
+              <h3 class="products__title">Куртка женская</h3>
+              <p class="products__description">
+                18 продано за последние 8 часов
+              </p>
+              <div class="products__review-price">
+                <p class="products__review">Отзывы</p>
+                <button class="products__price">1 499 ₽</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- categories -->
+      <section class="categories container">
+        <h2 class="categories__title">Популярные категории</h2>
+        <div class="categories__cards">
+          <a href="#" class="categories__link">
+            <div class="categories__card">
+              <img
+                src="img/categories/bag.png"
+                class="categories__img"
+                alt="Сумки"
+              />
+              <p class="categories__name">Сумки</p>
+            </div>
+          </a>
+          <a href="#" class="categories__link">
+            <div class="categories__card">
+              <img
+                src="img/categories/cloth.png"
+                class="categories__img"
+                alt="Одежда"
+              />
+              <p class="categories__name">Одежда</p>
+            </div>
+          </a>
+          <a href="#" class="categories__link">
+            <div class="categories__card">
+              <img
+                src="img/categories/cover.png"
+                class="categories__img"
+                alt="Чехлы"
+              />
+              <p class="categories__name">Чехлы</p>
+            </div>
+          </a>
+          <a href="#" class="categories__link">
+            <div class="categories__card">
+              <img
+                src="img/categories/headerphone.png"
+                class="categories__img"
+                alt="Наушники"
+              />
+              <p class="categories__name">Наушники</p>
+            </div>
+          </a>
+          <a href="#" class="categories__link">
+            <div class="categories__card">
+              <img
+                src="img/categories/clock.png"
+                class="categories__img"
+                alt="Часы"
+              />
+              <p class="categories__name">Часы</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Slider -->
+      <section class="slider container">
+        <div class="swiper">
+          <!-- Slides wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/slider.png" alt="фон" class="slider__bg" />
+              <div class="slider__text">
+                <p class="slider__description">ограниченное время</p>
+                <h2 class="slider__title">
+                  <span>30% скидка</span><br />по промокоду
+                </h2>
+                <button class="slider__btn btn">Купить</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slider.png" alt="фон" class="slider__bg" />
+              <div class="slider__text">
+                <p class="slider__description">ограниченное время</p>
+                <h2 class="slider__title">
+                  <span>30% скидка</span><br />по промокоду
+                </h2>
+                <button class="slider__btn btn">Купить</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slider.png" alt="фон" class="slider__bg" />
+              <div class="slider__text">
+                <p class="slider__description">ограниченное время</p>
+                <h2 class="slider__title">
+                  <span>30% скидка</span><br />по промокоду
+                </h2>
+                <button class="slider__btn btn">Купить</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls outside swiper-wrapper -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- partners -->
+      <section class="partners container">
+        <div class="partners__card">
+          <img src="img/Amazon.svg" alt="" class="partners__img" />
+        </div>
+        <div class="partners__card">
+          <img src="img/eBay.svg" alt="" class="partners__img" />
+        </div>
+        <div class="partners__card">
+          <img src="img/Walmart.svg" alt="" class="partners__img" />
+        </div>
+        <div class="partners__card">
+          <img src="img/Alibaba.svg" alt="" class="partners__img" />
+        </div>
+        <div class="partners__card">
+          <img src="img/AliExpress.svg" alt="" class="partners__img" />
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <img src="img/logo.svg" alt="Логотип" />
+          </div>
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Мужчинам</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Женщинам</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Аксессуары</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Блог</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">FAQ</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__social social">
+            <a href="#" class="social__link"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social__link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="social__link"
+              ><i class="fab fa-telegram-plane"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copy">&copy; 2025 Все права защищены</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

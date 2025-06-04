@@ -1,0 +1,148 @@
+.shop {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  align-items: center;
+
+  &__title {
+    font-size: 42px;
+    font-weight: 600;
+
+    & > span {
+      color: 6B7280;
+    }
+  }
+}
+
+.filter-tabs {
+  display: flex;
+  margin-top: 46px;
+  padding: 20px 40px;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  gap: 40px;
+
+  &__btn {
+    padding: 12px 28px;
+    color: #2b2b2b;
+    font-size: 16px;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+
+    &--active {
+      background-color: $dark;
+      color: $white;
+    }
+  }
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 29px;
+  margin-top: 50px;
+
+  &__card {
+    position: relative;
+    width: 284px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(169, 169, 169, 0.25);
+    border-radius: 8px;
+  }
+
+  &__image-section {
+    position: relative;
+    height: 230px;
+    background-color: #f7f7f7;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 17px;
+    left: 11px;
+    padding: 4px 8px;
+    font-size: 11px;
+    color: $white;
+    background-color: #95bf47;
+    border-radius: 18px;
+  }
+
+  &__size {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    top: 17px;
+    right: 11px;
+    background-color: $white;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  &__info {
+    position: relative;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    background-color: $white;
+  }
+
+  &__colors {
+    display: flex;
+    gap: 4px;
+  }
+
+  &__color {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding: 0;
+    background-clip: padding-box;
+    transition: border 0.3s;
+
+    &--active {
+      border-color: #222222;
+    }
+  }
+
+  &__title {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &__description {
+    margin-top: 8px;
+    font-size: 10px;
+    color: #535353;
+  }
+
+  &__review-price {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__review {
+    margin: 0;
+    color: #535353;
+    font-size: 12px;
+  }
+
+  &__price {
+    color: $dark;
+    border: 1px solid #222222;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
