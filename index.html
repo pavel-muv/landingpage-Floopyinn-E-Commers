@@ -22,7 +22,15 @@
         <a href="#" class="logo">
           <img src="img/logo.svg" alt="Logo" class="logo__img" />
         </a>
-        <nav class="header__nav header__nav--left">
+
+        <!-- Кнопка бургер-меню -->
+        <button class="burger" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="header__nav">
           <ul class="menu">
             <li class="menu__item">
               <a class="menu__link" href="#">Для мужчин</a>
@@ -32,7 +40,7 @@
             </li>
             <li class="menu__item menu-item-has-children">
               <a href="#">
-                Аксесуары
+                Аксессуары
                 <span class="arrow"></span>
               </a>
               <ul class="submenu">
@@ -51,6 +59,7 @@
             </li>
           </ul>
         </nav>
+
         <div class="header__icons">
           <button class="icon">
             <img class="icon__img" src="./img/search.svg" alt="Поиск" />

@@ -2,6 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const tabs = document.querySelectorAll('.filter-tabs__btn');
   const products = document.querySelectorAll('.products__card');
 
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.header__nav');
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    nav.classList.toggle('header__nav--active');
+  });
+
   tabs.forEach((tab) => {
     tab.addEventListener('click', () => {
       tabs.forEach((t) => t.classList.remove('filter-tabs__btn--active'));

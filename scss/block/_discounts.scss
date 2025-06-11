@@ -3,12 +3,20 @@
 
   &__description {
     font-size: 42px;
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
   }
 
   &__title {
     margin-top: 10px;
     font-size: 48px;
     font-weight: 600;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
   }
 
   &__content {
@@ -17,6 +25,12 @@
     grid-template-columns: 1.2fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 25px;
+
+    // Переход на один столбец
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
 
     & > .discounts__main-item {
       grid-column: 1 / 2;
@@ -33,6 +47,16 @@
       background-size: 45%, cover;
       padding: 60px 0 62px 40px;
       border-radius: 8px;
+
+      @media (max-width: 1200px) {
+        background-size: 30%, cover;
+      }
+
+      @media (max-width: 1024px) {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        padding: 40px 20px;
+      }
     }
 
     & > .discounts__offer-item {
@@ -40,6 +64,26 @@
       background-color: #ffffff;
       border-radius: 8px;
       border: 1px solid #ddd;
+
+      @media (max-width: 1200px) {
+        padding-right: 220px;
+      }
+
+      @media (max-width: 1024px) {
+        padding: 40px 20px;
+      }
+    }
+
+    & > .discounts__offer-item:nth-child(2),
+    & > .discounts__offer-item:nth-child(3) {
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-size: 120px;
+
+      @media (max-width: 768px) {
+        background-size: 80px;
+        background-position: bottom right;
+      }
     }
 
     & > .discounts__offer-item:nth-child(2) {
@@ -47,8 +91,11 @@
       grid-row: 1 / 2;
       background-color: #eff6ff;
       background-image: url(../img/bag.png);
-      background-repeat: no-repeat;
-      background-position: center right;
+
+      @media (max-width: 1024px) {
+        grid-column: 1 / -1;
+        grid-row: auto;
+      }
     }
 
     & > .discounts__offer-item:nth-child(3) {
@@ -56,26 +103,46 @@
       grid-row: 2 / 3;
       background-color: #fef2f2;
       background-image: url(../img/watch.png);
-      background-repeat: no-repeat;
-      background-position: center right;
+
+      @media (max-width: 1024px) {
+        grid-column: 1 / -1;
+        grid-row: auto;
+      }
     }
   }
 
+  // Остальные элементы тоже адаптируем
   &__main-title {
     font-size: 26px;
     font-weight: 200;
+
+    @media (max-width: 1200px) {
+      font-size: 20px;
+    }
   }
 
   &__main-subtitle {
     margin-top: 18px;
     font-size: 64px;
     font-weight: 700;
+
+    @media (max-width: 1200px) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
   }
 
   &__main-discount {
     margin-top: 18px;
     font-size: 24px;
     font-weight: 600;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
 
     & > span {
       color: $accent;
@@ -85,11 +152,23 @@
   &__main-shipping {
     margin-top: 12px;
     font-size: 16px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   &__main-btn {
     margin-top: 110px;
     padding: 14px 18px;
+
+    @media (max-width: 1200px) {
+      margin-top: 100px;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 60px;
+    }
   }
 
   &__offer-title {
@@ -106,5 +185,9 @@
     margin-top: 56px;
     padding: 10px 16px;
     font-size: 14px;
+
+    @media (max-width: 1200px) {
+      margin-top: 20px;
+    }
   }
 }
