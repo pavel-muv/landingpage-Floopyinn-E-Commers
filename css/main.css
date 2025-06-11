@@ -461,6 +461,7 @@ a {
 @media (max-width: 480px) {
   .hero__wrapper {
     padding: 40px 10px 40px 10px;
+    background-position: right;
   }
 }
 .hero__subtitle {
@@ -1314,6 +1315,12 @@ a {
   .slider__text {
     top: 80px;
     left: 15px;
+  }
+}
+@media (max-width: 452px) {
+  .slider__text {
+    top: 20px;
+    left: 20px;
   }
 }
 
