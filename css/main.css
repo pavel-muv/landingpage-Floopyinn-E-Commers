@@ -498,7 +498,6 @@ a {
   .hero__btn {
     padding: 12px 16px;
     margin-top: 20px;
-    width: 500%;
     font-size: 16px;
   }
 }
@@ -595,7 +594,7 @@ a {
   font-size: 14px;
   font-weight: 400;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .card {
     width: 45%; /* две карточки в ряд */
     padding-right: 10px;
@@ -605,7 +604,7 @@ a {
 @media (max-width: 600px) {
   .card {
     width: 100%;
-    padding-left: 20px;
+    padding: 20px;
     height: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -645,6 +644,11 @@ a {
 
 .discounts {
   margin-top: 150px;
+}
+@media (max-width: 768px) {
+  .discounts {
+    margin-top: 90px;
+  }
 }
 .discounts__description {
   font-size: 42px;
@@ -850,6 +854,11 @@ a {
 .shop__title > span {
   color: 6B7280;
 }
+@media (max-width: 768px) {
+  .shop {
+    margin-top: 100px;
+  }
+}
 
 .filter-tabs {
   display: -webkit-box;
@@ -993,6 +1002,44 @@ a {
   font-weight: 600;
 }
 
+.filter-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 46px;
+  padding: 20px 40px;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .filter-tabs {
+    padding: 16px 20px;
+    gap: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .filter-tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    padding: 12px 16px;
+  }
+  .filter-tabs .filter-tabs__btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .categories {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1048,6 +1095,103 @@ a {
           transform: scale(1.05);
 }
 
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 170px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.categories__title {
+  font-size: 42px;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .categories__title {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .categories__title {
+    font-size: 26px;
+  }
+}
+.categories__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 46px;
+  gap: 45px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 768px) {
+  .categories__cards {
+    gap: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .categories__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 24px;
+  }
+}
+.categories__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
+}
+@media (max-width: 480px) {
+  .categories__card {
+    width: 100%;
+  }
+}
+.categories__img {
+  border-radius: 13px;
+  width: 100%;
+  max-width: 100%;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.categories__name {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+@media (max-width: 480px) {
+  .categories__name {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+.categories__link:hover .categories__img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1079,13 +1223,48 @@ a {
   margin-top: 32px;
   padding: 12px 16px;
 }
+@media (max-width: 993px) {
+  .slider {
+    margin-top: 150px;
+  }
+}
 
 .swiper {
-  width: 1260px;
+  max-width: 1260px;
   height: 556px;
+}
+@media (max-width: 1260px) {
+  .swiper {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1010px) {
+  .swiper {
+    max-width: 900px;
+    height: 400px;
+  }
+}
+@media (max-width: 900px) {
+  .swiper {
+    max-width: 700px;
+    height: 350px;
+  }
+}
+@media (max-width: 705px) {
+  .swiper {
+    max-width: 450px;
+    height: 350px;
+  }
+}
+@media (max-width: 452px) {
+  .swiper {
+    max-width: 320px;
+    height: 250px;
+  }
 }
 
 .swiper-slide {
+  max-width: 100% !important;
   position: relative;
   overflow: hidden;
   height: 556px;
@@ -1126,6 +1305,17 @@ a {
   color: #000; /* или $dark, если у тебя переменная */
   z-index: 1;
 }
+@media (max-width: 1010px) {
+  .slider__text {
+    top: 100px;
+  }
+}
+@media (max-width: 900px) {
+  .slider__text {
+    top: 80px;
+    left: 15px;
+  }
+}
 
 .slider__description {
   font-size: 20px;
@@ -1137,6 +1327,11 @@ a {
   margin-top: 20px;
   font-size: 48px;
   font-weight: 600;
+}
+@media (max-width: 900px) {
+  .slider__title {
+    font-size: 36px;
+  }
 }
 
 .slider__btn {
@@ -1215,6 +1410,11 @@ a {
   border-top: 1px solid #ddd;
   font-weight: 400;
   font-size: 16px;
+}
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 90px;
+  }
 }
 
 .footer__container {

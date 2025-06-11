@@ -12,6 +12,10 @@
       color: 6B7280;
     }
   }
+
+  @media (max-width: 768px) {
+    margin-top: 100px;
+  }
 }
 
 .filter-tabs {
@@ -145,5 +149,32 @@
     border-radius: 4px;
     cursor: pointer;
     font-weight: 600;
+  }
+}
+
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 46px;
+  padding: 20px 40px;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    padding: 16px 20px;
+    gap: 12px;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px 16px;
+
+    .filter-tabs__btn {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
